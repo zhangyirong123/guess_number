@@ -17,11 +17,11 @@ public class GuessNumberRepositoryTest {
     @Test
     public void should_find_game() {
         GameRepository gameRepository = new GameRepository();
-        GuessNumberGame expectedguessNumberGame = gameRepository.create();
-        GuessNumberGame guessNumberGame = gameRepository.find();
+        GuessNumberGame initGuessNumber = gameRepository.create();
+        GuessNumberGame guessNumber = gameRepository.find();
 
-        Assert.assertNotNull(guessNumberGame);
-        Assert.assertEquals(expectedguessNumberGame, guessNumberGame);
+        Assert.assertNotNull(guessNumber);
+        Assert.assertEquals(initGuessNumber, guessNumber);
     }
 }
 
